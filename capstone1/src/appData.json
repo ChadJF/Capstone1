@@ -1,0 +1,123 @@
+{
+    "cards": [{
+        "id": "011246",
+        "title": "Blue-Eyes White Dragon",
+        "img": "img/1.jpg",
+        "price": 30000,
+        "condition": "perfect",
+        "catagory": "Yugioh",
+        "manufacturer": "Konami",
+        "info": "Description: This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale.",
+        "serialnum": "011246",
+        "quantity": 1
+    },
+    {
+        "id": "015279",
+        "title": "Dark Magician",
+        "img": "img/2.jpg",
+        "price": 15000,
+        "condition": "mint",
+        "catagory": "Yugioh",
+        "manufacturer": "Konami",
+        "info": "Description: The ultimate wizard in terms of attack and defense.",
+        "serialnum": "015279",
+        "quantity": 1
+    },
+    {
+        "id": "445712",
+        "title": "Black Lotus",
+        "img": "img/3.jpg",
+        "price": 175000,
+        "condition": "mint",
+        "catagory": "Magic the Gathering",
+        "manufacturer": "Hasbro",
+        "info": "Description: Adds 3 mana of any single color of your choice to your mana pool, then is discarded. Tapping this artifact can be played as an interrupt.",
+        "serialnum": "445712",
+        "quantity": 1
+    },
+    {
+        "id": "442133",
+        "title": "Ancestral Recall",
+        "img": "img/4.jpg",
+        "price": 5100,
+        "condition": "mint",
+        "catagory": "Magic the Gathering",
+        "manufacturer": "Hasbro",
+        "info": "Description: Draw 3 cards or force opponent to draw 3 cards.",
+        "serialnum": "442133",
+        "quantity": 1
+    },
+    {
+        "id": "017563",
+        "title": "Dark Magician Girl",
+        "img": "img/5.jpg",
+        "price": 18000,
+        "condition": "mint",
+        "catagory": "Yugioh",
+        "manufacturer": "Konami",
+        "info": "Description: Gains 300 ATK for every 'Dark Magician' or 'Magician of Black Chaos' in the GY",
+        "serialnum": "017563",
+        "quantity": 1
+    },
+    {
+        "id": "124497",
+        "title": "Charizard",
+        "img": "img/6.jpg",
+        "price": 20000,
+        "condition": "perfect",
+        "catagory": "Pokemon",
+        "manufacturer": "The Pokemon Company",
+        "info": "Description: All energy attached to this Pokemon are fire Energy instead of their usual type.",
+        "serialnum": "124497",
+        "quantity": 1
+    },
+    {
+        "id": "127785",
+        "title": "Venusaur",
+        "img": "img/7.jpg",
+        "price": 11500,
+        "condition": "used",
+        "catagory": "Pokemon",
+        "manufacturer": "The Pokemon Company",
+        "info": "Description: Pokemon Power: Energy Trans, As often as you like during your turn (before you attack), you may take 1 Leaf Energy card attached to 1 of your pokemon and attach it to a different one. This pwoer can't be used if Venusaur is Asleep, Confused, or Paralyzed.",
+        "serialnum": "127785",
+        "quantity": 1
+    },
+    {
+        "id": "125366",
+        "title": "Blastoise",
+        "img": "img/8.jpg",
+        "price": 18100,
+        "condition": "mint",
+        "catagory": "Pokemon",
+        "manufacturer": "The Pokemon Company",
+        "info": "Description: Pokemon Power: Rain Dance, As often as you like during your turn (before you attack), you may take 1 Water Energy card attached to 1 of your pokemon and attach it to a different one. This pwoer can't be used if Venusaur is Asleep, Confused, or Paralyzed.",
+        "serialnum": "125366",
+        "quantity": 1
+    },
+    {
+        "id": "569921",
+        "title": "Charmander",
+        "img": "img/9.jpg",
+        "price": 500,
+        "condition": "used",
+        "catagory": "Pokemon",
+        "manufacturer": "Wizards of the Coast",
+        "info": "Description: Scratch",
+        "serialnum": "569921",
+        "quantity": 1
+    },
+    {
+        "id": "014697",
+        "title": "Ten Thousand Dragon",
+        "img": "img/10.jpg",
+        "price": 10000,
+        "condition": "perfect",
+        "catagory": "Yugioh",
+        "manufacturer": "Konami",
+        "info": "Description: Cannot be Normal Summoned/Set. Must be Special Summoned by Tributing monsters you control whose combined ATK & DEF is 10,000 or more. If Summoned this way, the ATK/DEF of this card becomes 10,000.",
+        "serialnum": "014697",
+        "quantity": 1
+    }
+]
+}

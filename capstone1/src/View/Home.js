@@ -1,21 +1,52 @@
 import React from "react";
+import { useState } from 'react';
 import Search from "../Components/search";
-import Items from "../objects.json";
+import {
+  NavLink,
+} from "react-router-dom";
 
-const Home = () => {
-  const cards = [Items];
+const Home = (props) => {
+const cards = props.appState.getCards()
   
+  const filterCards = (cards, query) => {
+    if (!query) {
+        return cards;
+    }
+
+    return cards.filter((card) => {
+        const cardName = card.title.toLowerCase();
+        return cardName.includes(query);
+    });
+};
+
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('s');
+  const [searchQuery, setSearchQuery] = useState(query || '');
+  const filteredCards = filterCards(cards, searchQuery);
+
     return (
       <div>
           <div>
-          <h2>HELLO</h2>
-          <p>General sale description goes here.</p>
+          <h1 className="intro">Welcome</h1>
+          <p>This is a collector's sale site exclusivly for Trading Card Games (TCG). This site is available for the sale of card collectables from sports to children's entertainment.</p>
           </div>
           <div>
-            <Search />
+            <Search
+              searchQuery={searchQuery}
+              setSearchQuery={setSearchQuery}
+            />
             <ul>
-                {cards.map((card) => (
-                    <li key={card.id}>{card.name}</li>
+                {filteredCards.map((card) => (
+                    <li className="listItem" key={card.id}><NavLink to={`/product/${card.id}`}><img className="cardImage" src = {card.img}></img></NavLink><p> {card.title}<br/><br/> Price: ${card.price}</p>
+                    <div id="buttonDiv">
+                    {
+                    (props.appState.getCart()).find(x => x.id == card.id)?
+                      <button onClick ={() => props.appState.removeFromCart(card)}>Remove from Cart</button>:
+
+                      <button onClick={() => props.appState.addToCart(card)}>Add to Cart</button>
+                    }
+                    </div>
+                    </li>
                 ))}
             </ul>
           </div>

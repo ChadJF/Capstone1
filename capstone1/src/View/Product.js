@@ -1,19 +1,33 @@
 import React from "react";
  
-function Product() {
-    return (
-        <div>
-          <h2>HELLO</h2>
-          <p>Cras facilisis urna ornare ex volutpat, et
-          convallis erat elementum. Ut aliquam, ipsum vitae
-          gravida suscipit, metus dui bibendum est, eget rhoncus nibh
-          metus nec massa. Maecenas hendrerit laoreet augue
-          nec molestie. Cum sociis natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus.</p>
-   
-          <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
-        </div>
-      );
+function Product(props) {
+  const cards = props.appState.getCards()
+  const cardID = props.match.params.key
+  
+  const specificCard = cards.filter((card) => cardID == card.id)[0];
+
+
+  return (
+      <div>
+        <h2>{specificCard.title}</h2>
+        <p><img className="cardImage" src = {specificCard.img}></img></p>
+        <p>{specificCard.info}</p>
+        <p>Game: {specificCard.catagory}</p>
+        <p>Manufacturer: {specificCard.manufacturer}</p>
+        <p>Condition: {specificCard.condition}</p>
+        <p>Serial Number: {specificCard.serialnum}</p>
+        <p>Price: ${specificCard.price}</p>
+ 
+        <div id="buttonDiv">
+          {
+          (props.appState.getCart()).find(x => x.id == specificCard.id)?
+            <button onClick ={() => props.appState.removeFromCart(specificCard)}>Remove from Cart</button>:
+
+            <button onClick={() => props.appState.addToCart(specificCard)}>Add to Cart</button>
+          }
+          </div>
+      </div>
+    );
 }
  
 export default Product;
