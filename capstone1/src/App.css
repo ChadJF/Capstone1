@@ -1,0 +1,83 @@
+body {
+  background: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+h1 {
+  color: white;
+}
+.intro {
+  color: black;
+}
+p {
+  font-size: 25px;
+}
+ul {
+  padding-left: 0;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.cardImage {
+  width: 200px;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+button {
+  width: 150px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+input {
+  width: 99.5%;
+  height: 50px;
+  font-size: 1.5rem;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .listItem {
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+  }
+}
